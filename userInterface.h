@@ -14,4 +14,25 @@ void printOptions() {
   cout << endl << "Choose an option: ";
 }
 
+string getNewLoginName() {
+  cout << "Enter a desired name for the new login info: ";
+  string loginName = "";
+  cin >> loginName;
+  return loginName;
+}
+
+string getNewLoginUsername() {
+  cout << "Username: ";
+  string username = "";
+  cin >> username;
+  return username;
+}
+
+string getNewLoginPass() {
+  cout << "Password: ";
+  string password = "";
+  cin >> password;
+  return password;
+}
+
 #endif
