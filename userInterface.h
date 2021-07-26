@@ -2,6 +2,7 @@
 #define USERINTERFACE_H
 
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -17,7 +18,8 @@ void printOptions() {
 string getNewLoginName() {
   cout << "Enter a desired name for the new login info: ";
   string loginName = "";
-  cin >> loginName;
+  cin.ignore();
+  getline(cin, loginName);
   return loginName;
 }
 

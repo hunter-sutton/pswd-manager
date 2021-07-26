@@ -11,7 +11,10 @@ int main() {
     printOptions();
     cin >> userInput;
     if (userInput == 1) {
-      writeNewLoginInfo(getNewLoginPass(), getNewLoginUsername(), getNewLoginName());
+      string login_name = getNewLoginName();
+      string username = getNewLoginUsername();
+      string password = getNewLoginPass();
+      writeNewLoginInfo(login_name, username, password);
     }
     else if (userInput == 2) {
       //let user edit some desired login info

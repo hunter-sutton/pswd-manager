@@ -6,13 +6,13 @@
 
 using namespace std;
 
-void writeNewLoginInfo(string pass, string username, string name) {
+void writeNewLoginInfo(string login_name, string username, string password) {
   ofstream logins;
-  logins.open("login.txt");
+  logins.open("login.txt", ios_base::app);
   logins << "--------------------\n";
-  logins << name << "\n";
+  logins << login_name << "\n";
   logins << "Username: " << username << "\n";
-  logins << "Password: " << pass;
+  logins << "Password: " << password;
   logins << "\n--------------------";
   logins.close();
 }
